@@ -1,5 +1,5 @@
 
- export const Auth: React.FC = () =>{
+ const Auth: React.FC = () =>{
     return(
         <div className="Auth">      
                 <form >
@@ -16,3 +16,5 @@
          </div>        
     )
 }
+
+export default Auth

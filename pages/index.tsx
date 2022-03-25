@@ -1,9 +1,10 @@
 
 import Head from 'next/head'
-import { Auth } from './auth_component'
-import { FooterComponent } from './footer_component'
 import HeaderComponent from './header_component'
 import Script from 'next/script'
+import Auth from './auth_component'
+import FooterComponent from './footer_component'
+
 
 
 const Home = () => {
@@ -19,8 +20,8 @@ const Home = () => {
        <Script src="https://third-party-script.js"></Script>
         <div className='view' >  
           < HeaderComponent />
-          < Auth/>
-          < FooterComponent/>
+          < Auth />
+          < FooterComponent />
         </div>
       </div>
      

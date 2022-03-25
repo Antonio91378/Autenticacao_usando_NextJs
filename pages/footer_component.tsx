@@ -1,5 +1,5 @@
 
-export const FooterComponent:React.FC = ()=>{
+ const FooterComponent:React.FC = ()=>{
     return(
         <div >
            <ul className="footer">
@@ -16,3 +16,4 @@ export const FooterComponent:React.FC = ()=>{
     )
 }
 
+export default FooterComponent
