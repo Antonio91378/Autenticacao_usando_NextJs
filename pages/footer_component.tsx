@@ -1,8 +1,4 @@
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
-
-
 export const FooterComponent:React.FC = ()=>{
     return(
         <div >
