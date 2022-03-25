@@ -3,6 +3,7 @@ import Head from 'next/head'
 import { Auth } from './auth_component'
 import { FooterComponent } from './footer_component'
 import HeaderComponent from './header_component'
+import Script from 'next/script'
 
 
 const Home = () => {
@@ -15,6 +16,7 @@ const Home = () => {
           <script src="https://kit.fontawesome.com/0c3743f477.js" crossOrigin="anonymous"></script>
         </Head>
       <div className="section">
+       <Script src="https://third-party-script.js"></Script>
         <div className='view' >  
           < HeaderComponent />
           < Auth/>
