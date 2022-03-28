@@ -8,7 +8,7 @@ interface RotaAutenticadaProps{
     children: React.ReactNode;
 }
 
-export const RotaAutenticada: React.FC<RotaAutenticadaProps> = ({children}) =>{
+ const RotaAutenticada: React.FC<RotaAutenticadaProps> = ({children}) =>{
 
     const { data: session, status } = useSession()
 
@@ -31,3 +31,5 @@ export const RotaAutenticada: React.FC<RotaAutenticadaProps> = ({children}) =>{
         </div>
     )
 }
+
+export default RotaAutenticada;
