@@ -1,9 +1,9 @@
 
 import Head from 'next/head'
 import HeaderComponent from './header_component'
-import Script from 'next/script'
-import Auth from './auth_component'
 import FooterComponent from './footer_component'
+import Auth from './auth_component'
+import {RotaAutenticada} from './rota_autenticada'
 
 
 
@@ -16,14 +16,17 @@ const Home = () => {
           <link rel="icon" href="/favicon.ico" />
           <script src="https://kit.fontawesome.com/0c3743f477.js" crossOrigin="anonymous"></script>
         </Head>
-      <div className="section">
-       <Script src="https://third-party-script.js"></Script>
-        <div className='view' >  
-          < HeaderComponent />
-          < Auth />
-          < FooterComponent />
-        </div>
-      </div>
+
+        <RotaAutenticada>
+            <div className="section">
+                <div className='view' >  
+                  < HeaderComponent />
+                  < Auth />
+                  < FooterComponent />
+                </div>
+            </div>
+        </RotaAutenticada>
+          
      
     </div>
    
