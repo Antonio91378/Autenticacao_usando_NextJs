@@ -20,9 +20,11 @@ export default NextAuth({
       })
 
     ],
+    secret:'123123123123',
     callbacks: {
-      session({ session, token, user }) {
-        return session
+      async jwt({ token }) {
+        token.userRole = "user"
+        return token
       },
     },
   })
