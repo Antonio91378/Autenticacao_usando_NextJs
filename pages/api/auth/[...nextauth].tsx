@@ -19,5 +19,11 @@ export default NextAuth({
         issuer: 'https://dev-z9u-tcgj.us.auth0.com'
       })
 
-    ]
+    ],
+    callbacks: {
+      async jwt({ token }) {
+        token.userRole = "admin"
+        return token
+      },
+    },
   })
