@@ -21,9 +21,8 @@ export default NextAuth({
 
     ],
     callbacks: {
-      async jwt({ token }) {
-        token.userRole = "admin"
-        return token
+      session({ session, token, user }) {
+        return session
       },
     },
   })
