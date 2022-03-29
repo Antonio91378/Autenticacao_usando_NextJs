@@ -4,7 +4,7 @@ import { signOut } from "next-auth/react"
  const Auth: React.FC = () =>{
     return(
         <div className="Auth">      
-              <button onClick={() =>signOut()}>Sair</button>     
+              <button className="btn" onClick={() =>signOut()}>Sair</button>     
          </div>        
     )
 }

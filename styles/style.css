@@ -140,3 +140,18 @@ ul a:hover {
 #caixa:hover {
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.397);
 }
+
+.btn {
+  background-color: rgb(167, 78, 26);
+  font-size: 1.1rem;
+  color: aliceblue;
+  padding: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.267);
+  border-radius: 4px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.637);
+}
+.btn:hover {
+  padding: 6px;
+  font-size: 1.2rem;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.671);
+}

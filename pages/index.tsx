@@ -1,7 +1,5 @@
 
 import Head from 'next/head'
-import HeaderComponent from './header_component'
-import FooterComponent from './footer_component'
 import Auth from './auth_component'
 import RotaAutenticada from './rota_autenticada'
 
@@ -20,9 +18,7 @@ const Home = () => {
         <RotaAutenticada>
             <div className="section">
                 <div className='view' >  
-                  < HeaderComponent />
                   < Auth />
-                  < FooterComponent />
                 </div>
             </div>
         </RotaAutenticada>

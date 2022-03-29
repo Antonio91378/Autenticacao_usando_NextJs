@@ -4,7 +4,7 @@ import { signIn } from "next-auth/react"
  const Auth1: React.FC = () =>{
     return(
         <div className="Auth">      
-              <button onClick={() =>signIn()}>Clique Para logar</button>     
+              <button className="btn" onClick={() =>signIn()}>Clique Para logar</button>     
          </div>        
     )
 }
