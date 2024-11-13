@@ -1,3 +1,5 @@
+"use client";
+
 import axios from "axios";
 
 export default function RegisterConfirmation({
@@ -9,11 +11,15 @@ export default function RegisterConfirmation({
     event: React.MouseEvent<HTMLAnchorElement, MouseEvent>
   ) => {
     event.preventDefault(); // Impede que o link redirecione a página
-
     try {
-      const response = await axios.post("URL_DA_API", {
-        userIdentity: params.userIdentity, // Passando o parâmetro da rota no corpo da requisição
-      });
+      debugger;
+      console.log("API URL:", process.env.NEXT_PUBLIC_API_LOGIN_URI);
+      const response = await axios.post(
+        `${process.env.NEXT_PUBLIC_API_LOGIN_URI}/ConfirmUserRegistration`,
+        {
+          emailHash: params.userIdentity, // Passando o parâmetro da rota no corpo da requisição
+        }
+      );
       console.log("Resposta da requisição:", response.data);
     } catch (error) {
       console.error("Erro ao enviar a requisição:", error);
